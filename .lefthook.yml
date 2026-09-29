@@ -1,6 +1,5 @@
-pre-push:
+pre-commit:
   commands:
     changelog:
-      glob: "*.md"
       run: npm run changelog && npm run changelog:html
       stage_fixed: true
